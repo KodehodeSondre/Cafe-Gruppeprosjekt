@@ -12,18 +12,23 @@
     <div class="navbar">
         <div class="burgermenu"></div>
         <div class="quickscroll">
-            <h1 class="navbtn" id="frontpage">Front Page</h1>
-            <h1 class="navbtn" id="menu">Menu</h1>
-            <h1 class="navbtn" id="playlist">Playlist</h1>
+            <a href="index.html" class="navbtn" id="frontpage">Front Page</a>
+            <a href="#target-menu" class="navbtn" id="menu">Menu</a>
+            <a href="playlist.html" class="navbtn" id="playlist">Playlist</a>
+            <a href="information.html" class="navbtn" id="information">Information</a>
         </div>
         <img class="navbarlogo" src="./images/logo_light.png" alt="Lantern Latte Logo">
     </div>
     <div class="splashpage">
         <img class="heroimage" src="./images/hero_image.jpg" alt="Hero Image">
     </div>
-    <div class = "loldisempty"></div>
+
+    <div class="header">
+        <img src="../Lantern Latte/Full logo.png" alt="Logo">
+        <h4 class="headerText">Brewed with magic, served with heart</h4>
+    </div>
     
-    <div class="content">
+    <div class="content" id="target-menu">
         <div class="filter-sidebar">
             <h3>Filter Menu</h3>
             <div class="checkbox-container">
@@ -34,10 +39,14 @@
                 <label><input type="checkbox" class="filter-checkbox" value="drinks"> Drinks</label>
             </div>
         </div>
+
+    
         
         <div class="menu-container">
             <div class="menugrid">
-                <div class="menu-item menu-heading breakfast">Breakfast</div>
+                <div class="menu-item menu-heading breakfast">
+                    <h1 class="menuTitle">Breakfast</h1>
+                </div>
                 <div class="menu-item breakfast">
                     <div class="menu-image">
                         <img src="./images/images_pancakes.jpg" alt="Goblin Griddle Cakes">
@@ -68,7 +77,9 @@
                     </div>
                 </div>
                 
-                <div class="menu-image menu-heading lunch">Lunch</div>
+                <div class="menu-item menu-heading lunch">
+                    <h1 class="menuTitle">Lunch</h1>
+                </div>
                 
                 <div class="menu-item lunch">
                     <div class="menu-image">
@@ -110,7 +121,9 @@
                     </div>
                 </div>
                 
-                <div class="menu-item menu-heading dinner">Lunch</div>
+                <div class="menu-item menu-heading dinner">
+                    <h1 class="menuTitle">Dinner</h1>
+                </div>
                 
                 <div class="menu-item dinner">
                     <div class="menu-image">
@@ -171,6 +184,10 @@
                         <p>Fluffy scrambled eggs with dragon peppers, enchanted mushrooms, and smoked ham, served with buttered toast and a side of roasted tomatoes.</p>
                     </div>
                 </div>
+
+                <div class="menu-item menu-heading desert">
+                    <h1 class="menuTitle">Desert</h1>
+                </div>
                 
                 <div class="menu-item desert">
                     <div class="menu-image">
@@ -210,6 +227,10 @@
                         <h2>Wyrmkeeper’s Scramble €11.60</h2>
                         <p>Fluffy scrambled eggs with dragon peppers, enchanted mushrooms, and smoked ham, served with buttered toast and a side of roasted tomatoes.</p>
                     </div>
+                </div>
+
+                <div class="menu-item menu-heading drinks">
+                    <h1 class="menuTitle">Drinks</h1>
                 </div>
                 
                 <div class="menu-item drinks">
