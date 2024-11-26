@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 .map(cb => cb.value);
 
             menuItems.forEach(item => {
-                const itemType = Array.from(item.classList).find(cls => ['breakfast', 'lunch', 'dinner'].includes(cls));
+                const itemType = Array.from(item.classList).find(cls => ['breakfast', 'lunch', 'dinner','desert','drinks'].includes(cls));
                 if (activeFilters.length === 0 || activeFilters.includes(itemType)) {
                     item.style.display = 'block';
                 } else {
