@@ -56,8 +56,36 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 90vh;
+    height: 86vh;
     overflow: hidden;
+    background-image: url('./images/hero_image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+}
+
+.splashbtn {
+    background-color: #EEDFD0;
+    color: black;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%);
+    bottom: 200px;
+}
+
+.splashbtn:hover {
+    background-color: #391F0F; 
+    transform: translateX(-50%) scale(1.1);
+    color: #EEDFD0;
 }
 
 .heroimage {
@@ -129,6 +157,17 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     padding: 20px;
     align-items: center;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.menu-item.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+.menu-item.visible {
+    opacity: 1;
+    visibility: visible;
 }
 
 .menu-text {
@@ -200,11 +239,20 @@ body {
     margin-left: auto;
     margin-top: 50px;
     border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .headerText {
     font-family: "Moon Dance", sans-serif;
     font-size: 40px;
+    margin-top: -25px;
+}
+
+.headerimg {
+    height: 190px;
+    width: 688px;
+    padding-top: 40px;
 }
 
 input[type="checkbox"] {

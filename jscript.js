@@ -9,14 +9,36 @@ document.addEventListener('DOMContentLoaded', () => {
                 .map(cb => cb.value);
 
             menuItems.forEach(item => {
-                const itemType = Array.from(item.classList).find(cls => ['breakfast', 'lunch', 'dinner', 'desert', 'drinks'].includes(cls));
+                const itemType = Array.from(item.classList).find(cls => 
+                    ['breakfast', 'lunch', 'dinner', 'desert', 'drinks'].includes(cls)
+                );
 
                 if (activeFilters.length === 0 || activeFilters.includes(itemType)) {
                     item.classList.remove('hidden');
+                    item.classList.add('visible');
                 } else {
                     item.classList.add('hidden');
+                    item.classList.remove('visible');
                 }
             });
         });
+    });
+});
+
+document.querySelector('.splashbtn').addEventListener('click', function(event) {
+    event.preventDefault(); 
+
+
+    document.querySelector('#target-menu').scrollIntoView({
+        behavior: 'smooth' 
+    });
+});
+
+document.querySelector('#menu').addEventListener('click', function(event) {
+    event.preventDefault(); 
+
+
+    document.querySelector('#target-menu').scrollIntoView({
+        behavior: 'smooth' 
     });
 });
