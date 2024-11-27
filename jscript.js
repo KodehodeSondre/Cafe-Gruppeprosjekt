@@ -42,3 +42,11 @@ document.querySelector('#menu').addEventListener('click', function(event) {
         behavior: 'smooth' 
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const quickscroll = document.querySelector(".quickscroll");
+
+    hamburger.addEventListener("click", () => {
+        quickscroll.classList.toggle("open");
+    });
+});
